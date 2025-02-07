@@ -1,0 +1,113 @@
+/*
+CSS (Cascading Style Sheets) - This file defines the styles for the webpage.
+CSS is used to control the layout, colors, fonts, spacing, and responsiveness of the HTML elements.
+It allows us to separate design from structure (HTML).
+*/
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the entire page */
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+    background-color: #f4f4f4; /* Light gray background color */
+    color: #171718; /* Dark gray text color */
+}
+
+.header{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-style: solid;
+    margin-top: 150px;
+    border-color: #f4f4f4;
+}
+.library{
+    width: auto;
+    height: auto;
+}
+.wrapper{
+    width: auto;
+    height: auto;
+    border-style: solid;
+    background-image: url('images/bg.gif');
+    background-size: cover;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+.chat-system{
+    height: 400px;
+    border-style: solid;
+}
+.messages{
+    border-color: #133fa533;
+}
+.top-bar{
+    /* width: calc(100vw - 50vw - 20px); */
+    background-color: rgb(7, 13, 22);
+}
+
+.file{
+    width: 350px;
+    margin-bottom: 170px;
+    background-color: #2731466b;
+}
+.file-icon{
+    border-color: #343434;
+}
+.file-name{
+    width: 200px;
+    text-wrap:pretty;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+.cancel-btn{
+    /* border-color: #343434; */
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    background-color: #1d2f5bab;
+    transform: scale(1.085);
+}
+.cancel-btn:active{
+    transform: scale(0.955);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: #041a3b; /* Dark background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1160d8; /* Gray thumb */
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #022575; /* Lighter on hover */
+}
