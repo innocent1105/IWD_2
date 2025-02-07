@@ -51,6 +51,7 @@ sendMessageButton.addEventListener('click', () => {
     }
 
     let userMessage = chatInput.value.trim();
+    let actualMessage = userMessage;
     if (userMessage === '') return;
 
     if (fileLoaded) {
@@ -63,7 +64,7 @@ sendMessageButton.addEventListener('click', () => {
     userMessageDiv.innerHTML = `
         <div class="message user-message flex items-end justify-end gap-2">
             <div class="message-content cursor-default bg-gray-800 text-sm rounded-xl p-2 px-3">
-                ${userMessage}
+                ${actualMessage}
             </div>
         </div>
     `;
